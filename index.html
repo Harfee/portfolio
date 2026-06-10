@@ -8,43 +8,616 @@
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
+<!-- Header -->
+<header class="cabecalho">
+  <div class="cabecalho_linha-acento"></div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-lg">
+        <a class="navbar-brand cabecalho_marca" href="#inicio">
+            <span class="cabecalho_marca-letra">M</span>Moisés Muniz
+        </a>
+        <button class="navbar-toggler cabecalho_toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu"><i class="fa fa-bars"></i>
+        </button>
+        
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link cabecalho_link" href="#inicio">Início</a></li>
+              <li class="nav-item"><a class="nav-link cabecalho_link" href="#sobre">Sobre</a></li>
+              <li class="nav-item"><a class="nav-link cabecalho_link" href="#tecnologias">Tecnologias</a></li>
+              <li class="nav-item"><a class="nav-link cabecalho_link" href="#projetos">Projetos</a></li>
+              <li class="nav-item"><a class="nav-link cabecalho_link" href="#certificados">Certificados</a></li>
+              <li class="nav-item"><a class="nav-link cabecalho_link" href="#contato">Contato</a></li>
+              <li class="nav-item d-flex align-items-center">
+                <button class="btn-tema" id="btnTema" title="Alternar tema" aria-label="Alternar tema claro/escuro">
+                    <i class="fa-solid fa-moon" id="iconeTema"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 </header>
 
+<!-- Hero-->
+<section class="hero" id="inicio" data-nav-id="inicio">
+  <div class="container-lg">
+      <div class="hero_inner">
+        <div class="hero_conteudo">
+          <p class="hero_rotulo">Portfólio</p>
+          <h1 class="hero_titulo">Moisés <span class="hero_titulo-destaque">Muniz</span></h1>
+          <p class="hero_sub">Estudante de Ciência da Computação &amp; Buscando Estágio em TI</p>
+          <p class="hero_descricao">Focado em front-end, sempre aprendendo e construindo projetos que resolvem problemas reais.</p>
+          
+              <div class="hero_botoes">
+                  <a href="#projetos" class="botao botao_color-blue">Ver Projetos</a>
+                  <a href="#contato" class="botao botao_color-outline">Entrar em Contato</a>
+                  <a href="./cv-assets/curriculo.pdf" download class="botao botao_color-black">
+                    <i class="fa-solid fa-download"></i> Baixar CV
+                  </a>
+              </div>
+              
+              <div class="hero_info-cards">
+                  <div class="hero_card-info">
+                      <i class="fa-solid fa-code"></i>
+                      <span>Front-end</span>
+                  </div>
+
+                  <div class="hero_card-info">
+                      <i class="fa-solid fa-graduation-cap"></i>
+                      <span>UVV – CC</span>
+                  </div>
+
+                  <div class="hero_card-info hero_card-info--destaque">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <span id="heroBadgeStatus">Aberto a Estágio</span>
+                  </div>
+              </div>
+          </div>
+          <div class="hero_foto-wrap">
+              <div class="hero_foto-container">
+                  <img src="./cv-assets/foto.JPEG" alt="Foto de Moisés Muniz" class="hero_foto">
+                  <div class="hero_foto-borda"></div>
+              </div>
+
+              <div class="hero_foto-status">
+                  <span class="hero_status-dot"></span>
+                  <span id="heroStatusTexto">Disponível para estágio</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Sobre mim -->
+<section class="sobre" id="sobre">
+    <div class="container-lg">
+        <div class="secao_cabecalho">
+            <p class="secao_rotulo">// sobre mim</p>
+            <h2 class="secao_titulo">Quem sou eu</h2>
+        </div>
+
+        <div class="sobre_grid">
+            <div class="sobre_texto">
+                <p class="sobre_paragrafo">
+                    Meu nome é <strong>Moisés Muniz</strong>, tenho 20 anos e sou estudante de
+                    <strong>Ciência da Computação</strong> na Universidade Vila Velha (UVV).
+                </p>
+                <p class="sobre_paragrafo">
+                    Tenho grande interesse por tecnologia e estou sempre em busca de aprendizado
+                    contínuo em programação, desenvolvimento de software e inovação. Sou dedicado,
+                    curioso e focado em evoluir minhas habilidades técnicas e profissionais.
+                </p>
+                <p class="sobre_paragrafo">
+                    Atualmente busco uma oportunidade de <strong>estágio em TI</strong> para colocar
+                    em prática o que aprendo e contribuir com uma equipe real.
+                </p>
+
+                <div class="sobre_detalhes">
+                    <div class="sobre_detalhe-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Coqueiral de Itaparica, Vila Velha – ES</span>
+                    </div>
+
+                    <div class="sobre_detalhe-item">
+                        <i class="fa-solid fa-university"></i>
+                        <span>Universidade Vila Velha (UVV)</span>
+                    </div>
+
+                    <div class="sobre_detalhe-item">
+                        <i class="fa-solid fa-circle-check" id="sobreStatusIcone"></i>
+                        <span id="sobreStatusTexto">Disponível para estágio</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sobre_lateral">
+                <div class="sobre_card-destaque">
+                    <p class="sobre_card-texto">
+                        "Construindo uma carreira sólida em tecnologia, um projeto de cada vez."
+                    </p>
+                    <span class="sobre_card-assinatura">— Moisés Muniz</span>
+                </div>
+                <div class="sobre_stats">
+                    <div class="sobre_stat">
+                        <span class="sobre_stat-num">2</span>
+                        <span class="sobre_stat-label">Projetos</span>
+                    </div>
+                    <div class="sobre_stat">
+                        <span class="sobre_stat-num">20</span>
+                        <span class="sobre_stat-label">Anos</span>
+                    </div>
+                    <div class="sobre_stat">
+                        <span class="sobre_stat-num">∞</span>
+                        <span class="sobre_stat-label">Vontade de aprender</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tecnologias -->
+<section class="tecnologias" id="tecnologias">
+    <div class="container-lg">
+        <div class="secao_cabecalho">
+            <p class="secao_rotulo">// o que uso</p>
+            <h2 class="secao_titulo">Tecnologias</h2>
+        </div>
+        <div class="tecnologias_grid">
+
+            <!-- Linguagens -->
+            <div class="tech_grupo">
+                <h4 class="tech_grupo-titulo">Linguagens</h4>
+                <div class="tech_lista">
+                    <div class="tech_item">
+                        <i class="fa-brands fa-html5 tech_icone tech_icone--html"></i>
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="tech_item">
+                        <i class="fa-brands fa-css3-alt tech_icone tech_icone--css"></i>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="tech_item">
+                        <i class="fa-brands fa-js tech_icone tech_icone--js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferramentas -->
+            <div class="tech_grupo">
+                <h4 class="tech_grupo-titulo">Ferramentas</h4>
+                <div class="tech_lista">
+                    <div class="tech_item">
+                        <i class="fa-brands fa-git-alt tech_icone tech_icone--git"></i>
+                        <span>Git</span>
+                    </div>
+
+                    <div class="tech_item">
+                        <i class="fa-brands fa-github tech_icone tech_icone--github"></i>
+                        <span>GitHub</span>
+                    </div>
+
+                    <div class="tech_item">
+                        <i class="fa-brands fa-figma tech_icone tech_icone--figma"></i>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks e Libs -->
+            <div class="tech_grupo">
+                <h4 class="tech_grupo-titulo">Frameworks &amp; Libs</h4>
+                <div class="tech_lista">
+                    <div class="tech_item">
+                        <i class="fa-brands fa-bootstrap tech_icone tech_icone--bootstrap"></i>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back-End -->
+            <div class="tech_grupo tech_grupo--em-breve">
+                <h4 class="tech_grupo-titulo">Back-End</h4>
+                <div class="tech_lista">
+                    <div class="tech_item">
+                        <i class="fa-solid fa-database tech_icone tech_icone--sql"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+
+                    <!-- Retirei 
+                      <div class="tech_item tech_item--placeholder">
+                          <i class="fa-solid fa-plus tech_icone" style="color: var(--cor-borda);"></i>
+                          <span>Itens serão adicionados aqui</span>
+                      </div>
+                    -->
+                </div>
+            </div>
+
+            <!-- Aprendendo -->
+            <div class="tech_grupo tech_grupo--aprendendo" style="grid-column: 1 / -1;">
+                <h4 class="tech_grupo-titulo">Aprendendo <span class="tech_badge-breve">em breve</span></h4>
+                <div class="tech_lista tech_lista--row">
+                    <div class="tech_item tech_item--aprendendo">
+                        <i class="fa-brands fa-python tech_icone tech_icone--python"></i>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="tech_item tech_item--aprendendo">
+                        <i class="fa-brands fa-php tech_icone tech_icone--php"></i>
+                        <span>PHP</span>
+                    </div>
+
+                    <div class="tech_item tech_item--aprendendo">
+                        <i class="fa-brands fa-node-js tech_icone tech_icone--node"></i>
+                        <span>Node.js</span>
+                    </div>
+
+                    <!-- Futuro 
+                     
+                      Linguagens
+
+                        <div class="tech_item tech_item--aprendendo">
+                          <i class="fa-brands fa-java tech_icone tech_icone--java"></i>
+                          <span>Java</span>
+                      </div>
+
+                      <div class="tech_item tech_item--aprendendo">
+                          <i class="fa-brands fa-typescript tech_icone tech_icone--ts"></i>
+                          <span>TypeScript</span>
+                      </div>
 
 
+                      Frameworks e Libs
 
+                      <div class="tech_item tech_item--aprendendo">
+                          <i class="fa-brands fa-react tech_icone tech_icone--react"></i>
+                          <span>React</span>
+                      </div>
+                    
+                      <div class="tech_item tech_item--aprendendo">
+                          <i class="fa-brands fa-tailwind-css tech_icone tech_icone--tailwind"></i>
+                          <span>Tailwind CSS</span>
+                      </div>
+                    -->
+                </div>
+            </div>
 
+        </div>
+    </div>
+</section>
 
+<!-- Projetos -->
+<section class="projetos" id="projetos">
+    <div class="container-lg">
+        <div class="secao_cabecalho">
+            <p class="secao_rotulo">// o que construí</p>
+            <h2 class="secao_titulo">Projetos</h2>
+        </div>
+        <div class="projetos_grid">
 
+            <!-- Projeto ARCA -->
+            <div class="projeto_card">
+                <div class="projeto_card-acento"></div>
+                <div class="projeto_card-topo">
+                    <span class="projeto_badge">Acadêmico</span>
+                    <div class="projeto_icones-links">
+                        <a href="https://projetoarca.online" target="_blank" class="projeto_link-icon" title="Ver site">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
 
+                <h3 class="projeto_nome">Projeto ARCA</h3>
+                <p class="projeto_descricao">
+                    Sistema de bem-estar animal com foco em castração, resgate, atendimento
+                    veterinário e adoção. Redesign completo do site com interface moderna,
+                    acessível e responsiva, com login dinâmico para Cidadão e ONG/Clínica.
+                </p>
+                <div class="projeto_numeros">
+                    <div class="projeto_numero-item">
+                        <strong>2.100+</strong>
+                        <span>vagas de castração</span>
+                    </div>
+                    <div class="projeto_numero-item">
+                        <strong>114</strong>
+                        <span>eventos de adoção</span>
+                    </div>
+                </div>
+                <div class="projeto_tags">
+                    <span class="tag_tech">HTML5</span>
+                    <span class="tag_tech">CSS3</span>
+                    <span class="tag_tech">Bootstrap</span>
+                    <span class="tag_tech">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Projeto FakeFlix -->
+            <div class="projeto_card">
+                <div class="projeto_card-acento"></div>
+                <div class="projeto_card-topo">
+                    <span class="projeto_badge projeto_badge--secundario">Acadêmico</span>
+                    <div class="projeto_icones-links">
+                        <a href="https://harfee.github.io/fakeflix/index.html" target="_blank" class="projeto_link-icon" title="Ver código">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <h3 class="projeto_nome">FakeFlix</h3>
+                <p class="projeto_descricao">
+                    Réplica visual da interface da Netflix desenvolvida para praticar fundamentos
+                    de front-end: layouts responsivos, grid, alinhamento e componentização com
+                    Bootstrap e CSS puro.
+                </p>
+                <div class="projeto_aviso">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Em desenvolvimento — criado para aprendizado</span>
+                </div>
+                <div class="projeto_tags">
+                    <span class="tag_tech">HTML5</span>
+                    <span class="tag_tech">CSS3</span>
+                    <span class="tag_tech">Bootstrap</span>
+                    <span class="tag_tech">JavaScript</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Certificados -->
+<section class="certificados" id="certificados">
+    <div class="container-lg">
+        <div class="secao_cabecalho">
+            <p class="secao_rotulo">// conquistas</p>
+            <h2 class="secao_titulo">Certificados</h2>
+        </div>
+
+        <!-- Filtros -->
+        <div class="certificados_filtros">
+            <div class="certificados_filtros-grupo">
+                <span class="certificados_filtros-label">Ano:</span>
+                <div class="certificados_filtros-btns" id="filtroAno">
+                    <button class="filtro_btn filtro_btn--ativo" data-filtro-ano="todos">Todos</button>
+                    <button class="filtro_btn" data-filtro-ano="2026">2026</button>
+                    <button class="filtro_btn" data-filtro-ano="2025">2025</button>
+                    <button class="filtro_btn" data-filtro-ano="2024">2024</button>
+                    <button class="filtro_btn" data-filtro-ano="2023">2023</button>
+                    <button class="filtro_btn" data-filtro-ano="2022">2022</button>
+                </div>
+            </div>
+            <div class="certificados_filtros-grupo">
+                <span class="certificados_filtros-label">Status:</span>
+                <div class="certificados_filtros-btns" id="filtroStatus">
+                    <button class="filtro_btn filtro_btn--ativo" data-filtro-status="todos">Todos</button>
+                    <button class="filtro_btn" data-filtro-status="finalizado">Finalizado</button>
+                    <button class="filtro_btn" data-filtro-status="andamento">Em andamento</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="certificados_grid" id="listaCertificados">
+
+            <div class="certificado_card" data-ano="2026" data-status="andamento">
+                <div class="certificado_icon-wrap"><i class="fa-brands fa-python"></i></div>
+                <div class="certificado_info">
+                    <h4 class="certificado_nome">Programação para todos (Getting Started with Python)</h4>
+                    <p class="certificado_emissor">University of Michigan</p>
+
+                    <div class="certificado_meta">
+                        <span class="certificado_data">17 horas · Desde Junho/2026</span>
+                        <span class="certificado_status certificado_status--andamento">
+                            <i class="fa-solid fa-spinner fa-spin"></i> Em andamento
+                        </span>
+                    </div>
+                </div>
+                <a href="https://www.coursera.org/programs/tecnologia-da-informacao-t-i-zgy3z/learn/python" target="_blank" class="certificado_ver" title="Acessar página do curso">
+                    <i class="fa-solid fa-external-link"></i>
+                </a>
+            </div>
+
+            <div class="certificado_card" data-ano="2026" data-status="finalizado">
+                <div class="certificado_icon-wrap">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="certificado_info">
+                    <h4 class="certificado_nome">Introdução ao Git e GitHub</h4>
+                    <p class="certificado_emissor">Fundação Getulio Vargas (FGV)</p>
+                    <div class="certificado_meta">
+                        <span class="certificado_data">15 horas · Abril/2026</span>
+                        <span class="certificado_status certificado_status--finalizado">
+                            <i class="fa-solid fa-circle-check"></i> Finalizado
+                        </span>
+                    </div>
+                </div>
+                <a href="./cv-assets/certificados/Git_GitHub.pdf" target="_blank" class="certificado_ver" title="Ver certificado">
+                    <i class="fa-solid fa-external-link"></i>
+                </a>
+            </div>
+
+            <div class="certificado_card" data-ano="2022" data-status="finalizado">
+                <div class="certificado_icon-wrap">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <div class="certificado_info">
+                    <h4 class="certificado_nome">Projeto Miniempresa (Técnico em Administração)</h4>
+                    <p class="certificado_emissor">EEEFM Francelina Carneiro Setúbal</p>
+                    <div class="certificado_meta">
+                        <span class="certificado_data">180 horas · Maio/2022 a Setembro/2022</span>
+                        <span class="certificado_status certificado_status--finalizado">
+                            <i class="fa-solid fa-circle-check"></i> Finalizado
+                        </span>
+                    </div>
+                </div>
+                <a href="./cv-assets/certificados/mini_empresa.pdf" target="_blank" class="certificado_ver" title="Ver certificado">
+                    <i class="fa-solid fa-external-link"></i>
+                </a>
+            </div>
+
+            <div class="certificado_card" data-ano="2022" data-status="finalizado">
+                <div class="certificado_icon-wrap">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div class="certificado_info">
+                    <h4 class="certificado_nome">Programa Conectado com o Amanhã</h4>
+                    <p class="certificado_emissor">Junior Achievement Brasil</p>
+                    <div class="certificado_meta">
+                        <span class="certificado_data">5 horas · Junho/2022</span>
+                        <span class="certificado_status certificado_status--finalizado">
+                            <i class="fa-solid fa-circle-check"></i> Finalizado
+                        </span>
+                    </div>
+                </div>
+                <a href="./cv-assets/certificados/programa_conectado.pdf" target="_blank" class="certificado_ver" title="Ver certificado">
+                    <i class="fa-solid fa-external-link"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Mensagem quando não há resultados -->
+        <div class="certificados_vazio" id="certificadosVazio" style="display:none;">
+            <i class="fa-solid fa-filter-circle-xmark"></i>
+            <p>Nenhum certificado encontrado com esses filtros.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contato -->
+<section class="contato" id="contato">
+    <div class="container-lg">
+        <div class="secao_cabecalho">
+            <p class="secao_rotulo">// fale comigo</p>
+            <h2 class="secao_titulo">Contato</h2>
+        </div>
+        <div class="contato_grid">
+            <div class="contato_info">
+                <p class="contato_texto">
+                    Estou aberto a oportunidades de estágio, projetos e conexões na área de TI.
+                    Me manda uma mensagem!
+                </p>
+                <div class="contato_links">
+                    <a href="mailto:moisesmuniz199@gmail.com" class="contato_link-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>moisesmuniz199@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/Harfee" target="_blank" class="contato_link-item">
+                        <i class="fa-brands fa-github"></i>
+                        <span>github.com/Harfee</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/moisés-muniz/" target="_blank" class="contato_link-item">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>linkedin.com/in/moisés-muniz</span>
+                    </a>
+                    <a href="tel:+5527992295975" class="contato_link-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(27) 99229-5975</span>
+                    </a>
+                </div>
+            </div>
+            <div class="contato_form-wrap">
+                <div class="contato_campo">
+                    <label class="contato_label" for="nomeContato">Nome</label>
+                    <input type="text" id="nomeContato" class="contato_input" placeholder="Seu nome">
+                </div>
+                <div class="contato_campo">
+                    <label class="contato_label" for="emailContato">E-mail</label>
+                    <input type="email" id="emailContato" class="contato_input" placeholder="seuemail@email.com">
+                </div>
+                <div class="contato_campo">
+                    <label class="contato_label" for="msgContato">Mensagem</label>
+                    <textarea id="msgContato" class="contato_input contato_textarea" placeholder="Sua mensagem..."></textarea>
+                </div>
+                <button class="botao botao_color-blue" onclick="enviarContato()">Enviar Mensagem</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="rodape">
+    <div class="container-lg">
+        <div class="rodape_conteudo">
+
+            <!-- Marca -->
+            <div class="rodape_col rodape_col--marca">
+                <p class="rodape_nome">Moisés Muniz</p>
+                <p class="rodape_sub">Desenvolvedor Front-End em formação pela<br><strong>Universidade Vila Velha</strong></p>
+                <div class="rodape_social">
+                    <a href="https://github.com/Harfee" target="_blank" class="rodape_social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/moisés-muniz/" target="_blank" class="rodape_social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:moisesmuniz199@gmail.com" class="rodape_social-icon" title="E-mail"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Navegação -->
+            <div class="rodape_col">
+                <p class="rodape_col-titulo">Navegação</p>
+                <ul class="rodape_lista">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#certificados">Certificados</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Contato -->
+            <div class="rodape_col">
+                <p class="rodape_col-titulo">Contato</p>
+                <ul class="rodape_lista">
+                    <li>
+                      <a href="mailto:moisesmuniz199@gmail.com">
+                        <i class="fa-solid fa-envelope rodape_lista-icone"></i>
+                        moisesmuniz199@gmail.com
+                      </a>
+                    </li>
+
+                    <li>
+                        <a href="tel:+5527992295975">
+                          <i class="fa-solid fa-phone rodape_lista-icone"></i>
+                          (27) 99229-5975
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-map-pin rodape_lista-icone"></i>
+                        Vila Velha – ES
+                    </li>
+                    <li>
+                        <span class="rodape_status-dot" id="rodapeStatusDot"></span>
+                        <span class="rodape_status" id="rodapeStatus">Aberto a oportunidades</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Recursos -->
+            <div class="rodape_col">
+                <p class="rodape_col-titulo">Recursos</p>
+                <ul class="rodape_lista">
+                    <li><a href="#certificados">Certificados</a></li>
+                    <li><a href="#contato">Fale comigo</a></li>
+                    <li>
+                        <a href="./cv-assets/curriculo.pdf" download>
+                            <i class="fa-solid fa-download" style="font-size:0.75rem;"></i> Download CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="rodape_bottom">
+            <p>© <span id="anoAtual"></span> Moisés Muniz. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
 
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
