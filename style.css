@@ -737,8 +737,20 @@ section{
     color: #336791;
 }
 
-.tech_icone--sql{
+.tech_icone--mysql{
     color: #5b8dee;
+}
+
+.tech_icone--jquery{
+    color: #0769AD;
+}
+
+.tech_icone--sqlite{
+    color: #0f80b6;
+}
+
+.tech_icone--handlebars{
+    color: #F07746;
 }
 
 .tech_icone--php{
@@ -753,7 +765,7 @@ section{
     color: #61dafb;
 }
 
-.tech_icone--ts{
+.tech_icone--typescript{
     color: #3178c6;
 }
 
@@ -769,6 +781,31 @@ section{
     color: #2496ed;
 }
 
+.tech_icone--scss{
+    color: #CC6699;
+}
+
+.tech_icone--nextjs{
+    color: #FFFFFF;
+}
+
+.tech_icone--vuejs{
+    color: #42b883;
+}
+
+.tech_icone--nuxtjs{
+    color: #00DC82;
+}
+
+
+.tech_icone--laravel{
+    color: #FF2D20;
+}
+
+.tech_icone--svelte{
+    color: #FF3E00;
+}
+
 
 /* Modo claro */
 
@@ -780,8 +817,12 @@ body.modo-claro .tech_icone--github{
     color: #1a2130;
 }
 
-body.modo-claro .tech_icone--node{
+body.modo-claro .tech_icone--node, .tech_icone--vuejs{
     color: #2d7a2d;
+}
+
+body.modo-claro .tech_icone--postgresql{
+    color: #419ed9;
 }
 
 body.modo-claro .tech_icone--react, .tech_icone--tailwind{
@@ -796,8 +837,12 @@ body.modo-claro .tech_icone--csharp{
     color: #6e13ee;
 }
 
-body.modo-claro .tech_icone--cplusplus, .tech_icone--ts{
+body.modo-claro .tech_icone--cplusplus, .tech_icone--typescript{
     color: #127ccd;
+}
+
+body.modo-claro .tech_icone--nextjs{
+    color: #000000;
 }
 
 
