@@ -668,12 +668,30 @@ section{
     color: var(--cor-texto-muted);
 }
 
+.tech_item--aprendendo-visivel{
+    opacity: 0.88;
+    border-style: solid;
+}
+
+.tech_item--aprendendo-visivel:hover{
+    opacity: 1;
+}
+
+/* QUERO APRENDER */
+.tech_grupo--quero-aprender{
+    border-style: dashed;
+    opacity: 0.65;
+    padding-top: 20px;
+}
+
 .tech_icone{
     font-size: 1.3rem;
     width: 24px;
     text-align: center;
     flex-shrink: 0;
 }
+
+/* Modo escuro */
 
 .tech_icone--html{
     color: #e34f26;
@@ -687,12 +705,8 @@ section{
     color: #f7df1e;
 }
 
-body.modo-claro .tech_icone--js{
-    color: #c8a800;
-}
-
 .tech_icone--bootstrap{
-    color: #7952b3;
+    color: #712cf9;
 }
 
 .tech_icone--git{
@@ -703,16 +717,8 @@ body.modo-claro .tech_icone--js{
     color: #e8edf5;
 }
 
-body.modo-claro .tech_icone--github{
-    color: #1a2130;
-}
-
 .tech_icone--figma{
     color: #a259ff;
-}
-
-.tech_icone--vscode{
-    color: #007acc;
 }
 
 .tech_icone--python{
@@ -720,7 +726,15 @@ body.modo-claro .tech_icone--github{
 }
 
 .tech_icone--java{
-    color: #ed8b00;
+    color: #f89820;
+}
+
+.tech_icone--csharp{
+    color: #9856F6;
+}
+
+.tech_icone--postgresql{
+    color: #336791;
 }
 
 .tech_icone--sql{
@@ -728,23 +742,15 @@ body.modo-claro .tech_icone--github{
 }
 
 .tech_icone--php{
-    color: #8892be;
+    color: #777bb4;
 }
 
 .tech_icone--node{
-    color: #3d9a3d;
-}
-
-body.modo-claro .tech_icone--node{
-    color: #2d7a2d;
+    color: #339933;
 }
 
 .tech_icone--react{
     color: #61dafb;
-}
-
-body.modo-claro .tech_icone--react{
-    color: #0099bb;
 }
 
 .tech_icone--ts{
@@ -754,6 +760,46 @@ body.modo-claro .tech_icone--react{
 .tech_icone--tailwind{
     color: #38BDF8;
 }
+
+.tech_icone--cplusplus{
+    color: #00599c;
+}
+
+.tech_icone--docker{
+    color: #2496ed;
+}
+
+
+/* Modo claro */
+
+body.modo-claro .tech_icone--js{
+    color: #dab602;
+}
+
+body.modo-claro .tech_icone--github{
+    color: #1a2130;
+}
+
+body.modo-claro .tech_icone--node{
+    color: #2d7a2d;
+}
+
+body.modo-claro .tech_icone--react, .tech_icone--tailwind{
+    color: #0099bb;
+}
+
+body.modo-claro .tech_icone--java{
+    color: #b56708;
+}
+
+body.modo-claro .tech_icone--csharp{
+    color: #6e13ee;
+}
+
+body.modo-claro .tech_icone--cplusplus, .tech_icone--ts{
+    color: #127ccd;
+}
+
 
 /* PROJETOS */
 .projetos{

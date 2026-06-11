@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moisés Muniz | Portfólio</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/devicon/devicon.min.css">
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -172,17 +173,17 @@
                 <h4 class="tech_grupo-titulo">Linguagens</h4>
                 <div class="tech_lista">
                     <div class="tech_item">
-                        <i class="fa-brands fa-html5 tech_icone tech_icone--html"></i>
+                        <i class="devicon-html5-plain tech_icone tech_icone--html"></i>
                         <span>HTML5</span>
                     </div>
-
+          
                     <div class="tech_item">
-                        <i class="fa-brands fa-css3-alt tech_icone tech_icone--css"></i>
+                        <i class="devicon-css3-plain tech_icone tech_icone--css"></i>
                         <span>CSS3</span>
                     </div>
 
                     <div class="tech_item">
-                        <i class="fa-brands fa-js tech_icone tech_icone--js"></i>
+                        <i class="devicon-javascript-plain tech_icone tech_icone--js"></i>
                         <span>JavaScript</span>
                     </div>
                 </div>
@@ -193,17 +194,17 @@
                 <h4 class="tech_grupo-titulo">Ferramentas</h4>
                 <div class="tech_lista">
                     <div class="tech_item">
-                        <i class="fa-brands fa-git-alt tech_icone tech_icone--git"></i>
+                        <i class="devicon-git-plain tech_icone tech_icone--git"></i>
                         <span>Git</span>
                     </div>
 
                     <div class="tech_item">
-                        <i class="fa-brands fa-github tech_icone tech_icone--github"></i>
+                        <i class="devicon-github-plain tech_icone tech_icone--github"></i>
                         <span>GitHub</span>
                     </div>
 
                     <div class="tech_item">
-                        <i class="fa-brands fa-figma tech_icone tech_icone--figma"></i>
+                        <i class="devicon-figma-plain tech_icone tech_icone--figma"></i>
                         <span>Figma</span>
                     </div>
                 </div>
@@ -214,7 +215,7 @@
                 <h4 class="tech_grupo-titulo">Frameworks &amp; Libs</h4>
                 <div class="tech_lista">
                     <div class="tech_item">
-                        <i class="fa-brands fa-bootstrap tech_icone tech_icone--bootstrap"></i>
+                        <i class="devicon-bootstrap-plain tech_icone tech_icone--bootstrap"></i>
                         <span>Bootstrap</span>
                     </div>
                 </div>
@@ -226,6 +227,11 @@
                 <div class="tech_lista">
                     <div class="tech_item">
                         <i class="fa-solid fa-database tech_icone tech_icone--sql"></i>
+                        <span>SQL</span>
+                    </div>
+
+                    <div class="tech_item">
+                        <i class="devicon-postgresql-plain tech_icone tech_icone--postgresql"></i>
                         <span>PostgreSQL</span>
                     </div>
 
@@ -239,40 +245,35 @@
             </div>
 
             <!-- Aprendendo -->
-            <div class="tech_grupo tech_grupo--aprendendo" style="grid-column: 1 / -1;">
-                <h4 class="tech_grupo-titulo">Aprendendo <span class="tech_badge-breve">em breve</span></h4>
+            <div class="tech_grupo tech_grupo--aprendendo" style="grid-column: 1 / 3;">
+                <h4 class="tech_grupo-titulo">Aprendendo</h4>
                 <div class="tech_lista tech_lista--row">
-                    <div class="tech_item tech_item--aprendendo">
-                        <i class="fa-brands fa-python tech_icone tech_icone--python"></i>
+                    <div class="tech_item tech_item--aprendendo tech_item--aprendendo-visivel">
+                        <i class="devicon-python-plain tech_icone tech_icone--python"></i>
                         <span>Python</span>
                     </div>
 
-                    <div class="tech_item tech_item--aprendendo">
-                        <i class="fa-brands fa-php tech_icone tech_icone--php"></i>
+                    <div class="tech_item tech_item--aprendendo tech_item--aprendendo-visivel">
+                        <i class="devicon-php-plain tech_icone tech_icone--php"></i>
                         <span>PHP</span>
                     </div>
+                    
+                </div>
+            </div>
 
-                    <div class="tech_item tech_item--aprendendo">
-                        <i class="fa-brands fa-node-js tech_icone tech_icone--node"></i>
-                        <span>Node.js</span>
-                    </div>
-
-                    <!-- Futuro 
-                     
-                      Linguagens
-
+            <!-- Quero Aprender -->
+            <div class="tech_grupo tech_grupo--quero-aprender" style="grid-column: 3 / -1;">
+                <h4 class="tech_grupo-titulo">Quero Aprender <span class="tech_badge-breve">em breve</span></h4>
+                <div class="tech_lista tech_lista--row">
                         <div class="tech_item tech_item--aprendendo">
                           <i class="fa-brands fa-java tech_icone tech_icone--java"></i>
                           <span>Java</span>
                       </div>
 
                       <div class="tech_item tech_item--aprendendo">
-                          <i class="fa-brands fa-typescript tech_icone tech_icone--ts"></i>
+                          <i class="devicon-typescript-plain tech_icone tech_icone--ts"></i>
                           <span>TypeScript</span>
                       </div>
-
-
-                      Frameworks e Libs
 
                       <div class="tech_item tech_item--aprendendo">
                           <i class="fa-brands fa-react tech_icone tech_icone--react"></i>
@@ -280,14 +281,32 @@
                       </div>
                     
                       <div class="tech_item tech_item--aprendendo">
-                          <i class="fa-brands fa-tailwind-css tech_icone tech_icone--tailwind"></i>
+                          <i class="devicon-tailwindcss-plain tech_icone tech_icone--tailwind"></i>
                           <span>Tailwind CSS</span>
                       </div>
-                    -->
+
+                        <div class="tech_item tech_item--aprendendo">
+                            <i class="devicon-nodejs-plain tech_icone tech_icone--node"></i>
+                            <span>Node.js</span>
+                        </div>
+
+                        <div class="tech_item tech_item--aprendendo">
+                            <i class="devicon-csharp-plain tech_icone tech_icone--csharp"></i>
+                            <span>C#</span>
+                        </div>
+
+                        <div class="tech_item tech_item--aprendendo">
+                            <i class="devicon-cplusplus-plain tech_icone tech_icone--cplusplus"></i>
+                            <span>C++</span>
+                        </div>
+
+                        <div class="tech_item tech_item--aprendendo">
+                            <i class="devicon-docker-plain tech_icone tech_icone--docker"></i>
+                            <span>Docker</span>
+                        </div>
+
                 </div>
             </div>
-
-        </div>
     </div>
 </section>
 
@@ -342,8 +361,8 @@
                 <div class="projeto_card-topo">
                     <span class="projeto_badge projeto_badge--secundario">Acadêmico</span>
                     <div class="projeto_icones-links">
-                        <a href="https://harfee.github.io/fakeflix/index.html" target="_blank" class="projeto_link-icon" title="Ver código">
-                            <i class="fa-brands fa-github"></i>
+                        <a href="https://harfee.github.io/fakeflix/index.html" target="_blank" class="projeto_link-icon" title="Ver site">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
                 </div>
@@ -356,7 +375,7 @@
                 </p>
                 <div class="projeto_aviso">
                     <i class="fa-solid fa-circle-info"></i>
-                    <span>Em desenvolvimento — criado para aprendizado</span>
+                    <span>Em desenvolvimento — Última alteração em Março/2026</span>
                 </div>
                 <div class="projeto_tags">
                     <span class="tag_tech">HTML5</span>
@@ -423,7 +442,7 @@
 
             <div class="certificado_card" data-ano="2026" data-status="finalizado">
                 <div class="certificado_icon-wrap">
-                    <i class="fa-brands fa-github"></i>
+                    <i class="devicon-github-plain"></i>
                 </div>
                 <div class="certificado_info">
                     <h4 class="certificado_nome">Introdução ao Git e GitHub</h4>
@@ -507,11 +526,11 @@
                         <span>moisesmuniz199@gmail.com</span>
                     </a>
                     <a href="https://github.com/Harfee" target="_blank" class="contato_link-item">
-                        <i class="fa-brands fa-github"></i>
+                        <i class="devicon-github-plain"></i>
                         <span>github.com/Harfee</span>
                     </a>
                     <a href="https://www.linkedin.com/in/moisés-muniz/" target="_blank" class="contato_link-item">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="devicon-linkedin-plain"></i>
                         <span>linkedin.com/in/moisés-muniz</span>
                     </a>
                     <a href="tel:+5527992295975" class="contato_link-item">
@@ -549,8 +568,8 @@
                 <p class="rodape_nome">Moisés Muniz</p>
                 <p class="rodape_sub">Desenvolvedor Front-End em formação pela<br><strong>Universidade Vila Velha</strong></p>
                 <div class="rodape_social">
-                    <a href="https://github.com/Harfee" target="_blank" class="rodape_social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/moisés-muniz/" target="_blank" class="rodape_social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Harfee" target="_blank" class="rodape_social-icon" title="GitHub"><i class="devicon-github-plain"></i></a>
+                    <a href="https://www.linkedin.com/in/moisés-muniz/" target="_blank" class="rodape_social-icon" title="LinkedIn"><i class="devicon-linkedin-plain"></i></a>
                     <a href="mailto:moisesmuniz199@gmail.com" class="rodape_social-icon" title="E-mail"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
@@ -613,6 +632,7 @@
         </div>
         <div class="rodape_bottom">
             <p>© <span id="anoAtual"></span> Moisés Muniz. Todos os direitos reservados.</p>
+            <!-- Raisla eu te amo 🫶🏽 -->
         </div>
     </div>
 </footer>
